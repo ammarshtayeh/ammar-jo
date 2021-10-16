@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Ammar Jo Page</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <h1>Ammar Jo</h1>
+      <h2>Task 1</h2>
+
+      <div id="colorList">
+        <label class="color-label">Change Color:</label>
+        <button
+          id="black-button"
+          class="black"
+          onclick="changeColor(this.id)"
+        ></button>
+        <button
+          id="red-button"
+          class="red"
+          onclick="changeColor(this.id)"
+        ></button>
+        <button
+          id="green-button"
+          class="green"
+          onclick="changeColor(this.id)"
+        ></button>
+        <button
+          id="blue-button"
+          class="blue"
+          onclick="changeColor(this.id)"
+        ></button>
+      </div>
+
+      <ul id="mylist">
+        <li>Jerusalem</li>
+        <li>Nablus</li>
+        <li>Ramallah</li>
+        <li>Jerico</li>
+        <li>Beitlahem</li>
+        <li>Jenin</li>
+        <li>Hebron</li>
+        <li>Qalqilya</li>
+      </ul>
+
+      <div>
+        <input type="text" id="city-name" />
+        <button onclick="addCity()" id="add-city">Add City</button>
+      </div>
+
+      <div>
+        <button onclick="addPalestine()" id="palestine-button">
+          Add Palestine
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
